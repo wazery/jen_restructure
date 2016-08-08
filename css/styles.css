@@ -362,22 +362,23 @@ h3 {
 }
 
 #work {
-margin-top: 0px;
-background-image: url("../img/reuben2.jpg");
-background-color: black;
-background-size: cover;
-color: white;
-padding: 50px;
+  margin-top: 0px;
+  background-image: url("../img/reuben2.jpg");
+  background-color: black;
+  background-size: cover;
+  color: white;
+  padding: 50px;
 }
 
 
-#about { margin-top: 0px;
-background-image: url("../img/test1.jpg");
-background-color: black;
-background-attachment: fixed;
-background-size: cover;
-color: black;
-padding: 50px;
+#about {
+  margin-top: 0px;
+  background-image: url("../img/test1.jpg");
+  background-color: black;
+  background-attachment: fixed;
+  background-size: contain;
+  color: black;
+  padding: 50px;
 }
 
 /*
