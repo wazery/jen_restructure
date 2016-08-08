@@ -1,0 +1,480 @@
+* { box-sizing: border-box; }
+
+* {
+  border-radius: 0 !important;
+}
+
+/*** #fbd431 ***/ 
+
+
+body {
+      background-color: white;
+      color: black;
+      position: relative;
+      overflow-x: hidden;
+}
+
+
+.navbar {
+   background-color: black;
+   position: fixed;
+   width: 100%; 
+   top: 0;
+   z-index: 998;
+   left: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/** NAVBAR OLD 
+ .navbar ul li { 
+      display: inline-block;
+      letter-spacing: 0.05em; 
+      }
+
+      **/
+
+.navbar a {
+  -webkit-transition: color 600ms;
+}
+
+
+.navbar a:hover {
+       color: black;
+       text-decoration: none;
+       display: inline-block;
+}
+
+.navbar ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: color 600ms;
+}
+
+
+
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -51px;
+  z-index: 999;
+}
+
+/** deleting arrows **/
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}
+
+.container { 
+  font-family: "Courier New", Courier, monospace;
+  padding: 50px;
+}
+
+
+.container h1 {
+  font-size: 45px;
+}
+
+.container h2 {
+  font-size: 25px;
+}
+
+
+/**** HEADER ****/
+
+.header {
+    text-align: center;
+    border-bottom: thin solid black;
+    border-color: black;
+
+}
+
+
+/**** Contact page ****/
+
+
+/** COLUMN
+.column {
+     float: left;
+     padding: 0 50px;
+}
+
+**/
+
+/*** FAQ ***/
+
+
+.panel {
+  border-color: none;
+  padding-top: -50px;
+}
+
+.panel-group .panel-heading { 
+  background-color: black;
+
+}
+
+.panel-body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: none;
+  color: black;
+
+}
+
+.panel-transparent {
+        background: none;
+    }
+
+.panel-title {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Amatic SC', "Courier New", Courier, monospace;
+}
+
+.work-margins p { font-family: "Courier New", Courier, monospace; }
+
+.main-text {
+      font-family: 'Amatic SC', "Courier New", Courier, monospace;
+      margin-left: 25px;
+}
+
+.main-text p { 
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 100;
+      -webkit-margin-before: 0;
+      }
+
+.email p {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 100;
+      -webkit-margin-before: 0;
+      text-align: center;
+}
+
+.phone p {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 100;
+      -webkit-margin-before: 0;
+      text-align: center;
+      
+}
+
+
+.address {
+      font-family: "Courier New", Courier, monospace;
+}
+
+
+
+
+
+/*GLITCH*/
+
+.glitch {
+  color: white;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  width: 323px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(84px, 9999px, 23px, 0);
+  }
+  5% {
+    clip: rect(7px, 9999px, 58px, 0);
+  }
+  10% {
+    clip: rect(9px, 9999px, 15px, 0);
+  }
+  15% {
+    clip: rect(69px, 9999px, 29px, 0);
+  }
+  20% {
+    clip: rect(46px, 9999px, 49px, 0);
+  }
+  25% {
+    clip: rect(16px, 9999px, 71px, 0);
+  }
+  30% {
+    clip: rect(64px, 9999px, 8px, 0);
+  }
+  35% {
+    clip: rect(75px, 9999px, 78px, 0);
+  }
+  40% {
+    clip: rect(22px, 9999px, 65px, 0);
+  }
+  45% {
+    clip: rect(59px, 9999px, 11px, 0);
+  }
+  50% {
+    clip: rect(56px, 9999px, 79px, 0);
+  }
+  55% {
+    clip: rect(22px, 9999px, 17px, 0);
+  }
+  60% {
+    clip: rect(52px, 9999px, 59px, 0);
+  }
+  65% {
+    clip: rect(21px, 9999px, 68px, 0);
+  }
+  70% {
+    clip: rect(1px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(50px, 9999px, 36px, 0);
+  }
+  80% {
+    clip: rect(97px, 9999px, 59px, 0);
+  }
+  85% {
+    clip: rect(79px, 9999px, 51px, 0);
+  }
+  90% {
+    clip: rect(100px, 9999px, 92px, 0);
+  }
+  95% {
+    clip: rect(75px, 9999px, 2px, 0);
+  }
+  100% {
+    clip: rect(36px, 9999px, 80px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 3s  infinite alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(58px, 9999px, 87px, 0);
+  }
+  5% {
+    clip: rect(79px, 9999px, 60px, 0);
+  }
+  10% {
+    clip: rect(41px, 9999px, 66px, 0);
+  }
+  15% {
+    clip: rect(46px, 9999px, 70px, 0);
+  }
+  20% {
+    clip: rect(92px, 9999px, 26px, 0);
+  }
+  25% {
+    clip: rect(71px, 9999px, 51px, 0);
+  }
+  30% {
+    clip: rect(28px, 9999px, 35px, 0);
+  }
+  35% {
+    clip: rect(30px, 9999px, 1px, 0);
+  }
+  40% {
+    clip: rect(59px, 9999px, 20px, 0);
+  }
+  45% {
+    clip: rect(20px, 9999px, 29px, 0);
+  }
+  50% {
+    clip: rect(78px, 9999px, 86px, 0);
+  }
+  55% {
+    clip: rect(85px, 9999px, 4px, 0);
+  }
+  60% {
+    clip: rect(3px, 9999px, 13px, 0);
+  }
+  65% {
+    clip: rect(38px, 9999px, 49px, 0);
+  }
+  70% {
+    clip: rect(44px, 9999px, 16px, 0);
+  }
+  75% {
+    clip: rect(66px, 9999px, 94px, 0);
+  }
+  80% {
+    clip: rect(4px, 9999px, 50px, 0);
+  }
+  85% {
+    clip: rect(27px, 9999px, 25px, 0);
+  }
+  90% {
+    clip: rect(29px, 9999px, 87px, 0);
+  }
+  95% {
+    clip: rect(75px, 9999px, 2px, 0);
+  }
+  100% {
+    clip: rect(9px, 9999px, 28px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 #23bad5;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s  infinite alternate-reverse;
+}
+
+/*MARGIN ROW*/
+
+.work-margins { margin: 15px; }
+.row { padding: 40px;
+}
+
+#work {
+margin-top: 0px;
+background-image: url("../img/reuben2.jpg");
+background-color: black;
+background-size: cover;
+color: white;
+padding: 50px;
+}
+
+
+#about { margin-top: 0px;
+background-image: url("../img/test1.jpg");
+background-color: black;
+background-attachment: fixed;
+background-size: cover;
+color: black;
+padding: 50px;
+}
+
+/*
+#contact {
+    background-image: url("../img/faqbau.jpg");
+/*Add a background image*/
+    background-attachment: fixed;
+    
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+/*Have the background cover the entire div section*/
+    color: black;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    }
+
+/*
+#faq {
+margin-top: 0;
+background-image: url("../img/faqbau.jpg");
+background-color: black;
+background-attachment: fixed;
+background-size: cover;
+color: black;
+}
+*/
+
+
+
+#more {
+  margin-bottom: 100px;
+}
+
+#more.container {
+  margin-top: -50px;
+  padding-top: 0;
+}
+
+.learn-more {
+  text-align: left;
+  float: left;
+  padding-left: 60px;
+  margin-left: auto;
+}
+
+.modal-button {
+  float: right;
+  padding: 20px;
+  padding-right: 62px;
+}
+
+.modal-button .btn.btn-danger { background-image: url("../img/gify2.gif");
+border: none;}
+
+
+#modalembed {
+    padding: 10px;
+        height: 500px;        /* Viewport-relative units */
+    width: 500px;
+}
+
+
+
+.video-container {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+    z-index: 999;
+}
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+
+.form-control {
+  width: 100%;
+}
+
+footer.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+
